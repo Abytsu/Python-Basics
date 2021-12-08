@@ -15,9 +15,13 @@ try:
 except:
     print('\n\n- Erro no sistema! -\n\nmotivo:\n- valor inserido não é int ou não foi reconhecido pelo programa.')
     exit(print('\n\tSaindo...\n'))
-a=float(input('> Insira o valor de a (peso 2): '))
-b=float(input('> Insira o valor de b (peso 3): '))
-c=float(input('> Insira o valor de c (peso 4): '))
+try:
+    a=float(input('> Insira o valor de a (peso 2): '))
+    b=float(input('> Insira o valor de b (peso 3): '))
+    c=float(input('> Insira o valor de c (peso 4): '))
+except:
+    print('\n\n- Erro no sistema! -\n\nmotivo:\n- valor inserido não é int ou não foi reconhecido pelo programa.')
+    exit(print('\n\tSaindo...\n'))
 if i<=10:
     if i== 2 or i==4 or i==6 or i==8 or i== 10:
         media=(((a)+(b)+(c))/3)
